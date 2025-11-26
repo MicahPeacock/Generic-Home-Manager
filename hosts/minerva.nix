@@ -4,6 +4,7 @@
   imports = [
     ../profiles/base.nix
     ../profiles/desktop.nix
+    ../profiles/development.nix
     ../profiles/office.nix
   ];
 
@@ -16,8 +17,8 @@
 
   local = {
     programs.shell.default = "fish";
-    programs.terminal = {
-      default = "wezterm";
+    programs.wezterm = {
+      enable = true;
       theme = "Kanagawa Dragon (Gogh)";
       font = {
         name = "CaskaydiaCove Nerd Font Mono";
