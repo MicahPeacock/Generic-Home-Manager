@@ -9,7 +9,7 @@ in
 
   config = lib.mkIf cfg.enable {
     home.packages = with pkgs; [
-      jetbrains-toolbox
+      (config.lib.nixGL.wrap jetbrains-toolbox)
     ];
   };
 }
