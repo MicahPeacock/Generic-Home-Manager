@@ -16,5 +16,7 @@ in
       cantarell-fonts
       inter
     ];
+
+    fonts.fontconfig.enable = true;
   };
 }
