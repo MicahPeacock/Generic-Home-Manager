@@ -1,11 +1,13 @@
 { config, lib, pkgs, ... }:
-
+let
+  cfg = config.local.services.syncthing;
+in
 {
   options.local.services.syncthing = {
     enable = lib.mkEnableOption "Enable Syncthing service";
   };
 
-  config = lib.mkIf config.local.services.syncthing.enable {
+  config = lib.mkIf cfg.enable {
     services.syncthing = {
       enable = true;
       settings = {
