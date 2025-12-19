@@ -10,7 +10,6 @@
 
   local = {
     desktop.fonts.enable    = lib.mkDefault true;
-    services.flatpak.enable = lib.mkDefault true;
 
     programs.shell.default  = lib.mkDefault "bash";
     programs.wezterm.enable = lib.mkDefault true;
