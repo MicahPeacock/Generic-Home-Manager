@@ -2,6 +2,7 @@
 
 {
   programs.home-manager.enable = true;
+
   nixpkgs.config.allowUnfree = true;
 
   xdg.enable = true;
@@ -14,7 +15,7 @@
   ];
 
   home.shellAliases = {
-    hms = "home-manager switch --flake ~/.config/home-manager#$(hostname)";
+    hms = "home-manager switch --flake ~/.config/home-manager#$(uname -n)";
   };
 
   programs.git = {
