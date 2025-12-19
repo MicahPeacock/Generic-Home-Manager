@@ -4,6 +4,7 @@
   imports = [
     ../profiles/base.nix
     ../profiles/desktop.nix
+    ../profiles/development.nix
     ../profiles/gaming.nix
     ../profiles/office.nix
   ];
@@ -16,6 +17,8 @@
   };
 
   local = {
+    services.flatpak.enable = true;
+
     programs.shell.default = "fish";
     programs.wezterm = {
       enable = true;
