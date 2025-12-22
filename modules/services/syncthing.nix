@@ -12,7 +12,7 @@ in
       enable = true;
       settings = {
         devices = {
-          "minerva" = { id = "UI7RS6E-Y7Q7FZU-WTJPMDQ-QSNVTOD-6DKH2UE-X4DNWEO-F4HCITO-4FXCMAT"; };
+          "minerva" = { id = "XLXX2T5-DU3VQK6-SY5FHGI-DGHFJWU-FZXPFYT-XUL75Z6-M32U5ZX-ZPSGRAD"; };
           "jupiter" = { id = "2LSN7XS-XF4VXMH-CD36EAO-HNRABCM-DYPXZLM-2XJMTRR-TTMZYTL-B7WVNQQ"; };
           "mercury" = { id = "ELTO64J-HQPJAW4-R5UNGGU-NKLHVGO-AU2XUP6-Q6F36YF-SRZYGLR-A2FOGAW"; };
         };
